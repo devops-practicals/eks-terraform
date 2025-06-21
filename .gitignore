@@ -1,0 +1,41 @@
+###### root/.gitignore ######
+
+# Ignore Terraform working directory
+**/.terraform/*
+
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore Terraform backup files
+*.backup
+
+# Ignore Terraform crash logs
+crash.log
+crash.*.log
+
+# Ignore Terraform variable files (Sensitive Data)
+*.tfvars
+*.tfvars.json
+
+# Ignore Terraform plan files (Generated during `terraform plan -out=tfplan`)
+*.tfplan
+
+# Ignore Terraform override files (Local customization)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore Terraform provider lock files (Can be regenerated)
+.terraform.lock.hcl
+
+# Ignore Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore editor and OS-generated files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
