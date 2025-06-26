@@ -13,7 +13,12 @@ output "eks_cluster_id" {
   value       = aws_eks_cluster.eks_cluster.id
 }
 
-output "eks_cluster_name" {
+# output "eks_cluster_name" {
+#   description = "The name of the EKS cluster"
+#   value       = aws_eks_cluster.eks_cluster.name
+# }
+
+output "cluster_name" {
+  value = aws_eks_cluster.eks.name
   description = "The name of the EKS cluster"
-  value       = aws_eks_cluster.eks_cluster.name
 }
