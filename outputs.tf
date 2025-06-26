@@ -7,7 +7,7 @@ output "cluster_id" {
 
 output "cluster_endpoint" {
   description = "The endpoint URL for the EKS control plane"
-  value       = module.eks.cluster_endpoint
+  value       = module.eks.eks_cluster_endpoint
 }
 
 output "cluster_name" {
