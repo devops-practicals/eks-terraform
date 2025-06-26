@@ -38,8 +38,8 @@ provider "kubernetes" {
   token                  = data.aws_eks_cluster_auth.cluster.token
 }
 
-# Generate a Random Suffix for Unique Naming
-resource "random_string" "suffix" {
-  length  = 5
-  special = false
-}
+# # Generate a Random Suffix for Unique Naming
+# resource "random_string" "suffix" {
+#   length  = 5
+#   special = false
+# }
