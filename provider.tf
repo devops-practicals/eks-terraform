@@ -34,7 +34,7 @@ data "aws_eks_cluster_auth" "cluster" {
 # Kubernetes Provider Configuration
 provider "kubernetes" {
   host                   = data.aws_eks_cluster.cluster.endpoint
-  cluster_ca_certificate = base64decode(module.eks.kubeconfig-certificate-authority-data)
+  cluster_ca_certificate = base64decode(module.eks.eks_cluster_certificate_authority_data)
   token                  = data.aws_eks_cluster_auth.cluster.token
 }
 
