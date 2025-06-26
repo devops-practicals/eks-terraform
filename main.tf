@@ -32,6 +32,6 @@ module "eks" {
   scaling_desired_size    = 1
   scaling_max_size        = 2
   scaling_min_size        = 1
-  instance_types          = ["t3.small"]
-  key_pair                = "my-key-pair"
+  instance_types          = ["t4g.small"]
+  key_pair                = "aws-linux-mumbai"
 }
